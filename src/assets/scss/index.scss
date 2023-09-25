@@ -1,0 +1,66 @@
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@import './components/switchColorTheme.scss';
+@import './components/cartItem.scss';
+
+.sidebar {
+  top: 20px;
+}
+
+.cart-button {
+  position: relative;
+  margin: 0 12px 6px 12px;
+  cursor: pointer;
+  background: none;
+  border: 0;
+
+  .cart-button__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cart-button__count {
+    position: absolute;
+    bottom: -7px;
+    right: -3px;
+    background: rgba(var(--bs-warning-rgb));
+    font-size: 12px;
+    line-height: 12px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+  }
+}
+
+.card-product {
+  .card-img {
+    transition: all 0.35s ease;
+  }
+  .card-header {
+    overflow: hidden;
+  }
+
+  &:hover {
+    .card-img {
+      transform: scale(1.2);
+    }
+  }
+}
+
+// =======
+
+.checkout{
+  max-width: 1200px;
+}

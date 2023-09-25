@@ -1,0 +1,14 @@
+.cart-item {
+  display: grid;
+  grid-template-columns: 100px 2fr 1fr 1.5fr 1fr 36px;
+  gap: 12px;
+  align-items: center;
+  .cart-item__remove {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+}

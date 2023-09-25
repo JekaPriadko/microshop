@@ -1,0 +1,14 @@
+.product {
+  .product__gallery {
+    &-preview {
+      cursor: pointer;
+    }
+  }
+  .product__info{
+    &-left{
+      padding-right: 5px;
+      display: inline-block;
+      width: 100px;
+    }
+  }
+}
